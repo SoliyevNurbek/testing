@@ -1,5 +1,5 @@
 import json
-
+from datetime import datetime as dt
 def read_file(filename: str) -> str:
     with open(filename) as f:
         data = f.read()
@@ -17,7 +17,7 @@ def to_dict(data: str) -> dict:
     return numbers
 
 def get_oldest(persons: list) -> dict:
-    return max(persons, key=lambda person: person['age'])
+    return min(persons, key=lambda person: dt.strptime(person["birthday"],"%Y-%m-%d"))
 
 file_name = 'data.json'
 
