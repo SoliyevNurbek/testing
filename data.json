@@ -1,18 +1,18 @@
 [
     {
         "name": "Ali",
-        "age": 34
+        "birthday": "2002-12-23"
     },
     {
         "name": "Vali",
-        "age": 18
+        "birthday": "2000-12-23"
     },
     {
         "name": "Gani",
-        "age": 23
+        "birthday": "2003-03-20"
     },
     {
         "name": "Soli",
-        "age": 31
+        "birthday": "1999-12-23"
     }
 ]
