@@ -16,12 +16,11 @@ def to_dict(data: str) -> dict:
 
     return numbers
 
+def get_oldest(persons: list) -> dict:
+    return max(persons, key=lambda person: person['age'])
 
-def get_sum(numbers: list) -> int:
-    return sum(numbers)
-
-file_name = 'data.txt'
+file_name = 'data.json'
 
 data = read_file(file_name)
-numbers = to_dict(data)
-print(get_sum(numbers['numbers']))
+persons = to_dict(data)
+print(get_oldest(persons))
